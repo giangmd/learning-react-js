@@ -17,3 +17,7 @@ export function calculateWinner(squares) {
   }
   return null;
 }
+
+export function generateKey(pre) {
+    return `${ pre }_${ new Date().getTime() }`;
+}
